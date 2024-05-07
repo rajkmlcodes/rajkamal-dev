@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 50px 50px 10px 50px;
+}
+
+/* styling main-container located in header tag */
+.main-container {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    background: url('https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg');
+
+    box-shadow: 0 0 40px 5px rgba(167, 166, 166, 0.469);
+}
+
+/* this container is located in main-container inside the header tag */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(121, 30, 103, 0.679));
+    ;
+    width: 100%;
+    height: 650px;
+    /* padding: 30px; */
+    overflow: hidden;
+}
+
+
+/* right side of the profile image */
+.right {
+    overflow: hidden;
+}
+
+/* profile description heading - ABOUT ME */
+.right h1 {
+    color: #fff;
+    padding-left: 30px;
+}
+
+/* description box (below about me) in right side in the container */
+.description-box {
+    background: #51515163;
+    /* height: 100px; */
+    height: auto;
+    max-width: 40rem;
+    width: auto;
+    border-radius: 5px;
+    padding: 15px 25px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* styling p tag in description box */
+.description-box p {
+    color: #cbc7c7;
+    word-wrap: break-word;
+}
+
+/* my skills div - below description box */
+.myskills h3 {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+/* skills */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    list-style-type: none;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* styling li in skills */
+.skills ul li {
+    background: #61606050;
+    color: #cbc7c7;
+    padding: 5px 15px;
+    border-radius: 100px;
+    font-size: 14px;
+    transition: 0.4s ease;
+}
+
+/* hover effect on li */
+.skills ul li:hover {
+    background: #b5b5b550;
+    color: #ffffff;
+    cursor: context-menu;
+}
+
+
+/* left side of profile containing profile image with name and social media link(with social media icons) */
+.left {
+    text-align: center;
+}
+
+/* profile-picture in left side of the container inside main-container */
+img[alt="profile-pic"] {
+    width: 220px;
+    border-radius: 100%;
+}
+
+/* my name in left side inside the container */
+.profile-name {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* social media links below my name */
+.social-media-links a {
+    text-decoration: none;
+}
+
+/* styling social media icons - located below my name*/
+img[alt="social-media-links"] {
+    width: 35px;
+    border: 0;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+
+/* scroll-text div */
+.down-arrow-icon-div {
+    text-align: center;
+}
+
+/* sort down icon below main-container or container */
+img[alt="down-arrow-icon"] {
+    width: 20px;
+}
+
+
+/* container 2 styling */
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* left side of the container 2 */
+.part-1 {
+    display: flex;
+    flex: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-self: first baseline;
+    gap: 20px;
+    padding-top: 55px;
+}
+
+/* atyling button which is located inside part-2 div inside container 2 */
+.part-1 button {
+    border: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+
+    /* button shadow effect */
+    box-shadow:
+        0px 3.6px 5.3px rgba(0, 0, 0, 0.028),
+        0px 6.8px 10px rgba(0, 0, 0, 0.035),
+        0px 12.1px 17.9px rgba(0, 0, 0, 0.042);
+}
+
+.part-1 button:hover {
+    cursor: pointer;
+    box-shadow:
+        0px 3.6px 5.3px rgba(0, 0, 0, 0.058),
+        0px 6.8px 10px rgba(0, 0, 0, 0.065),
+        0px 12.1px 17.9px rgba(0, 0, 0, 0.2);
+}
+
+
+/* a tag in button */
+.part-1 button a {
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* social-media-container */
+.social-media-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* heading in social media container */
+.social-media-container h2 {
+    color: #818181;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* social-link-div */
+.social-link-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* social media icon in the left side of the project container */
+img[alt="social-icon"] {
+    width: 48px;
+}
+
+/* adding hover effect on social media icons */
+img[alt="social-icon"]:hover {
+    cursor: pointer;
+}
+
+
+/* part or project display area styling */
+.part-2 {
+    flex: 75%;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* pro
+.project-display-area {
+    min-height: 500px;
+    border: 2px solid red;
+} */
+
+/* heading div for the project container */
+.project-container-heading h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    /* padding: 20px 0; */
+    text-align: center;
+}
+
+/* project grid div - its simply a container which is holding or containing all the cards or project cards */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+    float: left;
+    /* padding: 50px 50px 80px 50px; */
+
+    padding: 15px;
+    gap: 50px;
+}
+
+
+/* styling card or project */
+.card {
+    max-width: 310px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 310px;
+    height: 200px;
+
+    /* card shadow */
+    box-shadow:
+        0px 2px 2.2px rgba(0, 0, 0, 0.011),
+        0px 4.7px 5.3px rgba(0, 0, 0, 0.016),
+        0px 8.9px 10px rgba(0, 0, 0, 0.02),
+        0px 15.9px 17.9px rgba(0, 0, 0, 0.024),
+        0px 29.7px 33.4px rgba(0, 0, 0, 0.029),
+        0px 71px 80px rgba(0, 0, 0, 0);
+
+    transition: all 0.75s ease;
+}
+
+/* styling overlay div */
+.overlay {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    /* background: rgba(0, 0, 0, 0); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.442));
+    transition: background-image 0.7s ease;
+}
+
+/* overlay effects on hovering the card */
+.card:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.686);
+    height: 100%;
+    top: 0;
+}
+
+/* styling card image or card thumbnail image */
+img[alt="card-bg-img"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* applying hover effect to the card */
+.card:hover img[alt="card-bg-img"] {
+    transform: scale(1.1);
+}
+
+/* card or project title */
+.title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 157px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    color: white;
+    text-shadow: 0 0 40px #000000;
+    z-index: 1;
+    transition: top .35s ease;
+}
+
+/* setting card title position on hovering */
+.card:hover .title {
+    top: 63px;
+}
+
+/* button-div containing two buttons : (1) Live preview, (2) Source Code Button */
+.button-div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 110px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* button div - styling a tag */
+.button-div a {
+    background: #ffffff;
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 4px;
+    /* z-index: 1; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* button tag in card - live preview and source code button */
+.card button {
+    background: transparent;
+    border: 0;
+    transition: all 0.35s ease;
+}
+
+/* card button hover - scale effect */
+.card button:hover {
+    transform: scale(1.05);
+}
+
+/* hover effect on card button  */
+.button-div button:hover a {
+    text-decoration: underline;
+}
+
+/* setting card button div opacity - it means it will be visible on hovering over card */
+.card:hover .button-div {
+    opacity: 1;
+}
+
+
+
+
+/* css media query for responsive view */
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        padding: 0;
+    }
+
+    .main-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .container {
+        height: 700px;
+        padding-top: 40px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    img[alt="profile-pic"] {
+        width: 160px;
+    }
+
+    .profile-name {
+        padding-top: 5px;
+        font-size: 23px;
+    }
+
+    img[alt="social-media-links"] {
+        display: none;
+    }
+
+    .right h1 {
+        display: none;
+    }
+
+    .description-box {
+        /* height: 100px; */
+        max-width: 280px;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 22px;
+    }
+
+    .mobile-description-box {
+        min-height: 170px;
+    }
+
+    .description-box p {
+        font-size: 14px;
+    }
+
+    .myskills {
+        text-align: center;
+        padding: 20px;
+        height: 110px;
+    }
+
+    .myskills h3 {
+        font-size: 18px;
+        font-weight: 600;
+        opacity: 0.75;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .skills ul {
+        gap: 5px;
+    }
+
+    .skills ul li {
+        font-size: 13px;
+        padding: 3px 15px;
+        margin: 3px 0;
+    }
+
+    .down-arrow-icon-div {
+        display: none;
+    }
+
+
+    /* container 2 */
+    .container-2 {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .part-1 {
+        flex: 10%;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    .part-1 button {
+        cursor: none;
+        border: 0;
+        width: 50%;
+        align-self: center;
+    }
+
+    .part-1 button a {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .social-media-container {
+        padding: 20px 60px;
+    }
+
+    .social-media-container h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    img[alt="social-icon"] {
+        width: 42px;
+    }
+
+    .part-2 {
+        flex: 100%;
+        border-radius: 0;
+        gap: 0;
+        padding: 0;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    /* project grid div - its simply a container which is holding or containing all the cards or project cards */
+    .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: flex-start; */
+        justify-content: flex-start;
+        float: left;
+        /* padding: 50px 50px 80px 50px; */
+        gap: 60px;
+    }
+}
+
+
+/* Targets the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+    /* roundness of the track */
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    /* this can be used to hide the buttons */
+}
